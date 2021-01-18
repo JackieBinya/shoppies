@@ -98,6 +98,14 @@ form button {
 .results-wrapper {
   padding-bottom: 5rem;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   background-color: #fff;
+}
+
+@media(min-width: 768px){
+  .results-wrapper{
+    flex-direction: row;
+  }
 }
