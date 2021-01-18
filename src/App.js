@@ -14,6 +14,7 @@ export const App = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setMoviesResults([]);
+    setError('');
 
     if (query.trim() === '') {
       setError('Invalid string');
@@ -34,6 +35,7 @@ export const App = () => {
     }
 
     if (!data.Search) {
+      setIsLoading(false);
       setError('Invalid string');
     }
   };
@@ -90,11 +92,12 @@ export const App = () => {
 
           {isLoading ? <p>Loading...</p> : ''}
 
+          {error ? <p className="alert-message">{error}</p> : ''}
+
           {moviesResults
             ? moviesResults.map(({ Title, Year, imdbID }) => (
                 <li key={imdbID}>
-                  <span>{Title}</span>
-                  -<span>{Year}</span>
+                  <span>{Title}</span>-<span>{Year}</span>
                   <button
                     type="button"
                     disabled={disabledButtons.includes(imdbID)}
@@ -116,8 +119,7 @@ export const App = () => {
             {nominatedMovies
               ? nominatedMovies.map(({ Title, Year, imdbID }) => (
                   <li key={imdbID}>
-                    <span>{Title}</span>
-                    -<span>{Year}</span>
+                    <span>{Title}</span>-<span>{Year}</span>
                     <button type="button" onClick={() => handleDelete(imdbID)}>
                       Remove
                     </button>

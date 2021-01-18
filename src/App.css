@@ -50,7 +50,7 @@ h1 {
   letter-spacing: -0, 03px;
 }
 
-h2>span {
+h2 > span {
   display: inline-block;
   margin-left: 0.3rem;
 }
@@ -98,6 +98,10 @@ form button {
 .results-wrapper section button {
   padding: 0.2rem;
   margin-left: 0.3rem;
+}
+
+.alert-message {
+  color: red;
 }
 
 .results-wrapper {
