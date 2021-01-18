@@ -13,11 +13,12 @@ html {
 }
 
 body {
-  margin: 0;
+  max-width: 70%;
+  margin: 0 auto;
   padding: 0;
   line-height: 1;
   color: #202020;
-  background-color: #fafafa;
+  background-color: gainsboro;
   font-family: 'Source Sans Pro', sans-serif;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
@@ -41,4 +42,62 @@ a {
 
 img {
   display: block; /* removes extra space */
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: -0, 03px;
+}
+
+form {
+  background-color: #ffffff; 
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+form label {
+  display: block;
+  font-size: 1.2rem;
+}
+
+form input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid grey;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  outline: transparent;
+}
+
+form button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  left: 3%;
+  color: grey;
+}
+
+.results-wrapper section {
+  min-height: 50%;
+  /* background-color: white; */
+  padding: 0.5rem 4.25rem 1rem;
+}
+
+.results-wrapper section li {
+  padding: 0.1rem;
+}
+
+.results-wrapper section button {
+  padding: 0.2rem;
+  margin-left: 0.3rem;
+}
+
+.results-wrapper {
+  padding-bottom: 5rem;
+  display: flex;
+  width: 100%;
+  background-color: #fff;
 }
