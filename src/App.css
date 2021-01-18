@@ -50,6 +50,11 @@ h1 {
   letter-spacing: -0, 03px;
 }
 
+h2>span {
+  display: inline-block;
+  margin-left: 0.3rem;
+}
+
 form {
   background-color: #ffffff;
   padding: 1rem 2rem;

@@ -94,7 +94,7 @@ export const App = () => {
             ? moviesResults.map(({ Title, Year, imdbID }) => (
                 <li key={imdbID}>
                   <span>{Title}</span>
-                  <span>{Year}</span>
+                  -<span>{Year}</span>
                   <button
                     type="button"
                     disabled={disabledButtons.includes(imdbID)}
@@ -117,7 +117,7 @@ export const App = () => {
               ? nominatedMovies.map(({ Title, Year, imdbID }) => (
                   <li key={imdbID}>
                     <span>{Title}</span>
-                    <span>{Year}</span>
+                    -<span>{Year}</span>
                     <button type="button" onClick={() => handleDelete(imdbID)}>
                       Remove
                     </button>
