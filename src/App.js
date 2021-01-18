@@ -13,6 +13,7 @@ export const App = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setMoviesResults([]);
 
     if (query.trim() === '') {
       setError('Invalid string');
