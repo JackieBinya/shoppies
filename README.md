@@ -17,4 +17,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - In your the command `yarn install` to install of the required package dependencies.
 - To start your developmental server use the command `yarn start`.
 
+## The extra features I added the project
+- I added input validation, an input of white space or invalid data (e.g. input of a letter or number) will trigger an error message.
+- Error in the server will also be shown in an error message.
+- I also added a loader for retrieving search result from the API.
+
   _Happy Coding🌻_
