@@ -51,7 +51,7 @@ h1 {
 }
 
 form {
-  background-color: #ffffff; 
+  background-color: #ffffff;
   padding: 1rem 2rem;
   margin-bottom: 1rem;
   position: relative;
@@ -104,8 +104,8 @@ form button {
   background-color: #fff;
 }
 
-@media(min-width: 768px){
-  .results-wrapper{
+@media (min-width: 768px) {
+  .results-wrapper {
     flex-direction: row;
   }
 }
