@@ -21,7 +21,7 @@ export const App = () => {
     setIsLoading(true);
 
     const response = await fetch(
-      `http://www.omdbapi.com/?s=${query}&apikey=${process.env.REACT_APP_API_KEY}`
+      `https://www.omdbapi.com/?s=${query}&apikey=${process.env.REACT_APP_API_KEY}`
     );
 
     const data = await response.json();
@@ -38,7 +38,7 @@ export const App = () => {
     if (nominatedMovies.length === 5) return;
 
     const response = await fetch(
-      `http://www.omdbapi.com/?i=${id}&apikey=${process.env.REACT_APP_API_KEY}`
+      `https://www.omdbapi.com/?i=${id}&apikey=${process.env.REACT_APP_API_KEY}`
     );
     const { Title, Year, imdbID } = await response.json();
 
