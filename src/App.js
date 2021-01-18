@@ -9,7 +9,8 @@ export const App = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [nominatedMovies, setNominatedMovies] = useState([]);
   const [disabledButtons, setDisabledButtons] = useState([]);
-
+  const [error, setError] = useState('')
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -26,7 +27,7 @@ export const App = () => {
 
     const data = await response.json();
 
-    if (data.Response) {
+    if (data.Response === true) {
       setMoviesResults([...data.Search]);
       setIsLoading(false);
     } else {
